@@ -5,4 +5,4 @@ A chave para o usuário e senha (da tela) é: "green@mail.com"
 
 ## Como executar
 
-Basta clonar ou efetuar o download do repositório e abrir o arquivo "login_green.html" com algum navegador.
+Basta clonar ou efetuar o download do repositório e abrir o arquivo "login_green.html" com algum navegador atualizado, (CHROME, FIREFOX, etc).
