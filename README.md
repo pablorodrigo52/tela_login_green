@@ -1,6 +1,7 @@
-# Tela de LOGIN
+# Desafio Shanghai
 
-Tela de login minimalista e moderna. 
+Consiste em contruir o front-end para uma tela de autenticação de usuário.
+Minimalista e Moderna. 
 A chave para o usuário e senha (da tela) é: "green@mail.com" 
 
 ## Como executar
