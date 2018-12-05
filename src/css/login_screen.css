@@ -1,0 +1,92 @@
+html, body{
+    height: 100%;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, rgba(70, 66, 66, 0.849), rgba(31, 28, 28, 0.849));
+}
+
+#header{
+    margin-top: 40px;
+}
+
+.row #txt-header{
+    margin: 0 auto;
+    font-size: 140%;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+#logomarca{
+   margin: 0px auto;
+}
+
+#login-box{
+    margin-top: 50px;
+}
+.box{
+    margin: 0px auto;
+    background-color: white !important;
+    width: 350px;
+    height: 450px;
+    text-align: center;
+}
+
+.row #company{
+    margin: -40px auto;
+}
+
+#title{
+    float: center;
+    margin: 40px auto;
+    font-size: 220%;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#sub-title{
+    float: center;
+    margin: 0px auto;
+    margin-top: -40px;
+    font-size: 110%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+#email, #password{
+    width: 275px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.row .input-group input:focus:not([readonly]) {
+    border-bottom: 1px solid #87BE56;
+    -webkit-box-shadow: 0 1px 0 0 #87BE56;
+    box-shadow: 0 1px 0 0 #87BE56; 
+}
+
+.no-border{
+    border: 0;
+    border-bottom: 1px solid #000000;
+    box-shadow: none;
+}
+.icon{
+    border: 0;
+    background-color: white;
+}
+
+.row .btn{
+    margin: 0px auto;
+    width: 275px;
+    background-image: linear-gradient(to bottom, #87BE56, #99CA5C);
+    color: white;
+}
+
+.row #forgot-password{
+    margin: 0px auto;
+    margin-top: 20px;
+    font-size: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: #000000;
+    text-decoration: underline;
+}
