@@ -37,9 +37,16 @@ html, body{
     margin: -40px auto;
 }
 
+.row #company_name{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8.5px;
+    font-weight: lighter;
+    margin-top: 3px;
+}
+
 #title{
     float: center;
-    margin: 40px auto;
+    margin: 59px auto;
     font-size: 220%;
     font-weight: lighter;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -47,7 +54,7 @@ html, body{
 #sub-title{
     float: center;
     margin: 0px auto;
-    margin-top: -40px;
+    margin-top: -59px;
     font-size: 110%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: lighter;
