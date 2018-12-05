@@ -16,81 +16,89 @@
 
         <!--Links úteis:
             Paleta de cores: http://erikasarti.com/html/tabela-cores/
+            Wallpapers: https://www.pexels.com/search/galaxy%20wallpaper/
         -->
     </head>
     <body>
         <div id="tela" class="container">
-            <div id="background-image">
-                <div id="header" class="row"> <!-- Logomarca 1 -->
+            <div id="header" class="row"> <!-- Logomarca 1 -->
                 <a id="txt-header" href="#"><img src="assets/green.png" style="width: 30px; height: auto;">green</a> <!-- Icone retirado de: https://www.iconfinder.com/icons/3389547/green_leaf_leaf_leaf_design_milkweed_leaf_wild_leaf_icon -->
-                </div>
-                <div id="login-box" class="row">
-                    <div id="box" class="box rounded shadow-lg">
-                        <div class="row">
-                            <div id="company"> <!-- Logomarca 2 -->
-                                <img src="assets/circle-brush.png" style="width: 80px; height: auto;"><br> <!-- Icone retirado de: https://www.onlygfx.com/12-grunge-circle-brush-stroke-png-transparent/ -->
+            </div>
+            <div id="login-box" class="row">
+                <div id="box" class="box rounded shadow-lg">
+                    <div class="row">
+                        <div id="company"> <!-- Logomarca 2 -->
+                            <img src="assets/circle-brush.png" style="width: 80px; height: auto;"><br> <!-- Icone retirado de: https://www.onlygfx.com/12-grunge-circle-brush-stroke-png-transparent/ -->
                                 <div id="company_name">
-                                    CÍRCULO LTDA.
+                                    CÍRCULO GRUNGE LTDA.
                                 </div>
                             </div>
                         </div>
-                        <div class="row"> <!-- Label inicial (título)-->
-                            <div id="title">
-                                Bom dia!
-                            </div>
-                        </div>
-                        <div class="row"> <!-- Label secundário (sub_titulo) -->
-                            <div id="sub-title">
-                                Para acessar faça seu login
-                            </div> 
-                        </div>
-                        <div class="row"> <!-- Campo para o E-MAIL -->
-                            <div id="email">
-                                <div class="input-group mb-1">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text icon" id="basic-addon1"><img src="assets/baseline-email-24px.svg"></span> <!-- Icones retirados de: https://material.io/tools/icons/?icon=lock&style=baseline -->
-                                    </div>
-                                    <input type="text" class="form-control no-border" placeholder="E-mail" aria-label="e-mail" aria-describedby="basic-addon1">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row"><!-- Campo para a SENHA -->
-                            <div id="password">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend ">
-                                        <span class="input-group-text icon" id="basic-addon1"><img src="assets/baseline-lock-24px.svg"></span> <!-- Icones retirados de: https://material.io/tools/icons/?icon=lock&style=baseline -->
-                                    </div>
-                                    <input type="password" class="form-control no-border" placeholder="Senha" aria-label="Senha" aria-describedby="basic-addon1">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row"> <!-- Botão ENTRAR -->
-                                <button type="button" class="btn" onclick="#">Entrar</button>
-                        </div>
-                        <div class="row"> <!-- Esqueci a senha -->
-                            <a id="forgot-password" onmouseover="#" href="#">ESQUECI MINHA SENHA</a>
+                    <div class="row"> <!-- Label inicial (título)-->
+                        <div id="title">
+                            Bom dia!
                         </div>
                     </div>
-                </div>
-                <div id="dolar" class="rounded">
-                    <div class="row">
-                        <div class="col-sm">
-                            <div id="dolar-label">
-                                Dólar hoje
-                                <div id="dolar-value">
-                                    US$ 2,50
+                    <div class="row"> <!-- Label secundário (sub_titulo) -->
+                        <div id="sub-title">
+                            Para acessar faça seu login
+                        </div> 
+                    </div>
+                    <div class="row"> <!-- Campo para o E-MAIL -->
+                        <div id="email">
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text icon" id="basic-addon1"><img src="assets/baseline-email-24px.svg"></span> <!-- Icones retirados de: https://material.io/tools/icons/?icon=lock&style=baseline -->
+                                </div>
+                                <input type="text" id="mail" class="form-control no-border" placeholder="E-mail">
+                                <div id="div-verify-icon" class="input-group-prepend" hidden>
+                                    <span class="input-group-text icon" id="basic-addon1"><i id="verify-icon" class=""></i></span> <!-- Icone retirados de FontAwesome-->
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm">
-                            <div id="dolar-icon">
-                                <i class="fa fa-arrow-up"></i>
+                    </div>
+                    <div class="row"><!-- Campo para a SENHA -->
+                        <div id="password">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend ">
+                                    <span class="input-group-text icon" id="basic-addon1"><img src="assets/baseline-lock-24px.svg"></span> <!-- Icones retirados de: https://material.io/tools/icons/?icon=lock&style=baseline -->
+                                </div>
+                                <input type="password" id="pass" class="form-control no-border" placeholder="Senha">
+                                <div id="div-verify-icon-pass" class="input-group-prepend" hidden>
+                                        <span class="input-group-text icon" id="basic-addon1"><i id="verify-icon-pass" class=""></i></span> <!-- Icone retirados de FontAwesome-->
+                                </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row"> <!-- Botão ENTRAR -->
+                        <button type="button" class="btn" onclick="checkCredentials()">Entrar</button>
+                    </div>
+                    <div class="row"> <!-- Esqueci a senha -->
+                        <a id="forgot-password" onmouseover="#" href="#">ESQUECI MINHA SENHA</a>
+                    </div>
+                </div>
+            </div>
+            <div id="dolar" class="rounded">
+                <div class="row">
+                    <div class="col-sm">
+                        <div id="dolar-label">
+                            Dólar hoje
+                            <div id="dolar-value">
+                                US$ 4,50
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div id="dolar-icon">
+                            <i class="fa fa-arrow-up"></i> <!-- Icone da seta -->
                         </div>
                     </div>
                 </div>
             </div>
         </div> <!-- Container close -->
+
+        <!--Carrego o controlador na página..-->
+        <script src="js/controller.js"></script>
         <!-- Alguns componentes do framework utilizam funções próprias implementadas em javascript, jquery, etc.. então também preciso "importar" essas dependências -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
