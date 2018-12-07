@@ -48,3 +48,17 @@ function comparator_pass(valor, elemento)
         elemento.setAttribute("style", "border-bottom: 1px solid #FF6347; -webkit-box-shadow: 0 1px 0 0 #FF6347;");
     }
 }
+
+function setHourTitle()
+{
+    var data = new Date();
+    var title = document.getElementById("title");
+    var hour = data.getHours();
+
+    if(hour <= 12)
+        title.innerHTML = "Bom dia!";
+    else if( (hour > 12) && (hour <= 17) )
+        title.innerHTML = "Boa tarde!";
+    else
+        title.innerHTML = "Boa noite!";
+}

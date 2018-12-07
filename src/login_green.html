@@ -26,6 +26,11 @@
         -->
     </head>
     <body>
+        <script type="text/javascript"> 
+        window.onload = function(){ 
+            setHourTitle(); /* Get the hour and update the label "bom dia", "boa tarde", "boa noite" */
+        }
+        </script>
         <div id="tela" class="container">
             <div id="header" class="row"> <!-- Logomarca 1 -->
                 <a id="txt-header" href="#"><img src="assets/green.png" style="width: 30px; height: auto;">green</a> <!-- Icone retirado de: https://www.iconfinder.com/icons/3389547/green_leaf_leaf_leaf_design_milkweed_leaf_wild_leaf_icon -->
@@ -41,14 +46,10 @@
                             </div>
                         </div>
                     <div class="row"> <!-- Label inicial (título)-->
-                        <div id="title">
-                            Bom dia!
-                        </div>
+                        <div id="title"></div>
                     </div>
                     <div class="row"> <!-- Label secundário (sub_titulo) -->
-                        <div id="sub-title">
-                            Para acessar faça seu login
-                        </div> 
+                        <div id="sub-title">Para acessar faça seu login</div> 
                     </div>
                     <div class="row"> <!-- Campo para o E-MAIL -->
                         <div id="email">
