@@ -4,7 +4,7 @@ html, body{
     margin: 0px;
     /*background-image: linear-gradient(to bottom, gray, snow);*/
     background-image: url("backgroundIMG.jpeg");/*Photo by Lisa Fotios from Pexels*/
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
