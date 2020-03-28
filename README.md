@@ -1,7 +1,22 @@
 tela_login_green
 
-#Desafio Shanghai
+# Desafio Shanghai (Login Screen)
+- Frontend login screen.  
+- Minimalist and modern.
 
-Consiste em contruir o front-end para uma tela de autenticação de usuário. Minimalista e Moderna. A chave para o usuário e senha (da tela) é: “green@mail.com”
+# Auth
 
-#Como executar Basta clonar ou efetuar o download do repositório e abrir o arquivo “login_green.html”, localizado na pasta “src”, com algum navegador atualizado, (CHROME, FIREFOX, etc).
+- USR: green@mail.com
+- PASS: green@mail.com
+
+# How acess
+- ...
+
+# Technology
+
+- Bootstrap and html, css, javascript
+
+# Dependencies
+
+- JQuery
+- Font Awesome
