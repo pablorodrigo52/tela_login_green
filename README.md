@@ -9,8 +9,8 @@ tela_login_green
 - USR: green@mail.com
 - PASS: green@mail.com
 
-# How acess
-- ...
+# How acess 
+- To visualize, acess: https://pablorodrigo52.github.io/tela_login_green/src/#
 
 # Technology
 
